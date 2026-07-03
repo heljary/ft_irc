@@ -2,7 +2,6 @@
 
 // This function handles the USER command, which is part of the client registration process.
 void userCommand(Client& client, std::vector<std::string>& params,  Server& server){
-    // This line prevents the compiler from showing an "unused parameter" warning for 'server'.
     (void)server; 
 
     // Check if the client is already registered.

@@ -2,7 +2,6 @@
 
 // This function handles the PING command to check if the connection is still alive.
 void myPingCommand(Client& client, std::vector<std::string>& params, Server& server) {
-    // This line prevents the compiler from showing an "unused parameter" warning for 'server'.
     (void)server;
     // The PING command requires a parameter (the origin server or token).
     if(params.empty()){

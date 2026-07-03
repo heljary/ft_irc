@@ -3,24 +3,19 @@ NAME        = ircserv
 CXX         = c++
 CXXFLAGS    = -Wall -Wextra -Werror -std=c++98
 
-SRCS        = main.cpp \
-              CommandHandler.cpp \
-              Client.cpp \
-              Server.cpp \
-              Ping.cpp \
+SRCS        = Nick.cpp \
               Pass.cpp \
-              Nick.cpp \
               User.cpp \
-              Quit.cpp \
               Privmsg.cpp \
-              Channel.cpp \
+              Notice.cpp \
               Join.cpp \
               Part.cpp \
               Kick.cpp \
               Invite.cpp \
               Topic.cpp \
-              Notice.cpp \
               Mode.cpp \
+              Ping.cpp \
+              Quit.cpp
 
 OBJS        = $(SRCS:.cpp=.o)
 
